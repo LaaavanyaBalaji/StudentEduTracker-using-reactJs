@@ -1,0 +1,68 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh; /* Full height to ensure footer sticks to the bottom */
+    padding: 20px 0;
+    position: relative; /* Relative position for absolute positioning of footer */
+  }
+  
+  .navlogo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .navlist {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    flex-grow: 1; /* Grow to fill available space, pushing footer down */
+  }
+  
+  .navitem {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navitem:hover {
+    background-color: #444;
+  }
+  
+  .navicon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .navtext {
+    font-size: 1rem;
+  }
+  
+  /* Footer Symbols positioned at the bottom of the navbar */
+  .footerSymbol {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute; /* Absolute positioning within the navbar */
+    bottom: 0; /* Stick to the bottom */
+    left: 0;
+    background-color: #222;
+  }
+  
+  .footerSymbol svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .footerSymbol svg:hover {
+    color: #888;
+  }
+    
